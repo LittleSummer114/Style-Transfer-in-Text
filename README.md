@@ -1,4 +1,5 @@
 # Forked From: 
+https://github.com/fuzhenxin/Style-Transfer-in-Text
 Zhenxin Fu (fuzhenxin95@gmail.com) from Peking University.  
 
 # A Paper List for Style Transfer in Text
@@ -18,11 +19,32 @@ This is a paper list for style transfer in text. It also contains some related r
 
 ## Unsupervised (Non-parallel Data)
 - Sequence to Better Sequence: Continuous Revision of Combinatorial Structures, ICML-2017, [[paper]](http://proceedings.mlr.press/v70/mueller17a.html), [[code]](https://bitbucket.org/jwmueller/sequence-to-better-sequence/)
+![](https://github.com/LittleSummer114/Natural-Language-Inference-Paper-List/blob/master/images/Visual-1.PNG)
 - Toward Controlled Generation of Text, ICML-2017, [[paper]](https://arxiv.org/abs/1703.00955), [[official code]](https://github.com/asyml/texar/tree/master/examples/text_style_transfer), [[unofficial code]](https://github.com/GBLin5566/toward-controlled-generation-of-text-pytorch)
 - Style Transfer from Non-Parallel Text by Cross-Alignment, NIPS-2017, [[paper]](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf), [[code]](https://github.com/shentianxiao/language-style-transfer)
 - Adversarially Regularized Autoencoders, ICML-2018, [[paper]](https://arxiv.org/abs/1706.04223), [[code]](https://github.com/jakezhaojb/ARAE)
 - Zero-Shot Style Transfer in Text Using Recurrent Neural Networks, Arxiv-2017, [[paper]](https://arxiv.org/abs/1711.04731), [[code]](https://github.com/keithecarlson/Zero-Shot-Style-Transfer)
 - Style Transfer in Text: Exploration and Evaluation, AAAI-2018, [[paper]](https://arxiv.org/abs/1711.06861), [[code]](https://github.com/fuzhenxin/text_style_transfer)
+```   
+Motivation:   
+目前文本风格迁移领域的面临的挑战:
+1. 缺乏并行语料
+2. 缺乏可靠的评价方法
+
+针对缺乏并行语料的情况,作者提出了2个基于非并行语料的模型,1个模型是基于multi-decoder,encoder编码输入的content,decoder针对相同的content输出不同style的表达,另1个模型也是基于相同的encoder,decoder只有1个,引入了style embeddings来编码style.
+
+针对缺乏可靠的评价方法的情况,作者提出了2个评价方法,分别验证了文本风格迁移的2个方面:内容的保留情况和迁移的强度。
+
+Contributions:
+1. 提出了1个paper-new方面的数据集
+2. 提出了2个模型
+3. 提出了2个评价方法
+
+Question List:    
+1. 作者举的例子求解的是实体对间的关系? 但是实际上多个三元组(a,b,c)和(c,d,e),根据问的实体和关系在所在三元组中的位置,求解的问题可以分为4类:   
+问中间实体,已知a,b,d,e,问c;问两边的实体,已知a,b,c,d,问e;问两边的关系,已知a,b,d,e,问c和a的关系;问开头和结尾的关系(知识图谱补全).
+```
+
 - Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer, NAACL-2018, [[paper]](https://arxiv.org/abs/1804.06437), [[code]](https://worksheets.codalab.org/worksheets/0xe3eb416773ed4883bb737662b31b4948/)
 - SHAPED: Shared-Private Encoder-Decoder for Text Style Adaptation, NAACL-2018, [[paper]](https://arxiv.org/abs/1804.04093)
 - Sentiment Transfer using Seq2Seq Adversarial Autoencoders, project for CSYE7245 Northeastern University, [[paper]](https://arxiv.org/abs/1804.04003)
@@ -95,25 +117,3 @@ This is a paper list for style transfer in text. It also contains some related r
 # Workshop
 - Stylistic Variation, EMNLP-2017, [[link]](https://sites.google.com/site/workshoponstylisticvariation/)
 - Stylistic Variation, NAACL-HLT-2018, [[link]](https://sites.google.com/view/2ndstylisticvariation/home)
-
-```   
-Motivation:   
-这篇论文的作者构建了一个Knowledge-based VQA的数据集,特点是在于以前的数据集涉及到的reasoning是一种first-order reasoning,而这篇论文涉及到multiple inference steps (called high-order), 具体来说,作者构建的数据集要回答的问题是:
-这幅图里面那个男孩子和那个在1948年被引入的物体的关系是什么?
-回答这个问题就需要涉及到2个三元组:
-(1948年引入的物体,?)
-(boy,??,?)    
-
-Question List:    
-1. 作者举的例子求解的是实体对间的关系? 但是实际上多个三元组(a,b,c)和(c,d,e),根据问的实体和关系在所在三元组中的位置,求解的问题可以分为4类:   
-问中间实体,已知a,b,d,e,问c;问两边的实体,已知a,b,c,d,问e;问两边的关系,已知a,b,d,e,问c和a的关系;问开头和结尾的关系(知识图谱补全).
-```
-
-```   
-Model:
-输入是(question,image)对,作者的模型由3部分组成:   
-第一部分将question解析成树的形式,获得需要求解的元素(包括间接元素(1948年引入的物体,?)和最终求解元素(boy,??,?)),已知元素及他们之间的关系;      
-第二部分基于knowledge base进行搜索,得到间接元素(1948年引入的物体,?);
-第三部分,基于间接元素和已知元素进行基于image的search,获得最终求解元素(boy,??,?))
-```
-![](https://github.com/LittleSummer114/Natural-Language-Inference-Paper-List/blob/master/images/Visual-1.PNG)
