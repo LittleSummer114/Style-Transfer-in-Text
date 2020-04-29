@@ -2,6 +2,10 @@
 https://github.com/fuzhenxin/Style-Transfer-in-Text
 Zhenxin Fu (fuzhenxin95@gmail.com) from Peking University.  
 
+- Commments Contributed by **[Jingyun Xu]**, from 2016-, 2020.4.29.
+- :whale2: 取自静云(鲸鱼), :whale2: 的数量仅表示个人喜好的程度 :kissing_heart:, :heart_eyes: 表示想去细读的, :dizzy_face:表示看了，没有完全看懂的。
+
+
 # A Paper List for Style Transfer in Text
 This is a paper list for style transfer in text. It also contains some related research areas, including controlled text generation.
 
@@ -18,12 +22,20 @@ This is a paper list for style transfer in text. It also contains some related r
 - Harnessing Pre-Trained Neural Networks with Rules for Formality Style Transfer, EMNLP-2019, [[paper]](https://www.aclweb.org/anthology/D19-1365/), [[code]](https://github.com/jimth001/formality_emnlp19)
 
 ## Unsupervised (Non-parallel Data)
-- Sequence to Better Sequence: Continuous Revision of Combinatorial Structures, ICML-2017, [[paper]](http://proceedings.mlr.press/v70/mueller17a.html), [[code]](https://bitbucket.org/jwmueller/sequence-to-better-sequence/)
-![](https://github.com/LittleSummer114/Natural-Language-Inference-Paper-List/blob/master/images/Visual-1.PNG)
-- Toward Controlled Generation of Text, ICML-2017, [[paper]](https://arxiv.org/abs/1703.00955), [[official code]](https://github.com/asyml/texar/tree/master/examples/text_style_transfer), [[unofficial code]](https://github.com/GBLin5566/toward-controlled-generation-of-text-pytorch)
-- Style Transfer from Non-Parallel Text by Cross-Alignment, NIPS-2017, [[paper]](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf), [[code]](https://github.com/shentianxiao/language-style-transfer)
-- Adversarially Regularized Autoencoders, ICML-2018, [[paper]](https://arxiv.org/abs/1706.04223), [[code]](https://github.com/jakezhaojb/ARAE)
-- Zero-Shot Style Transfer in Text Using Recurrent Neural Networks, Arxiv-2017, [[paper]](https://arxiv.org/abs/1711.04731), [[code]](https://github.com/keithecarlson/Zero-Shot-Style-Transfer)
+### 基于GAN的模型
+[:whale2::whale2::whale2::whale2::whale2:] - Utilizing Non-Parallel Text for Style Transfer by Making Partial Comparisonsn, IJCAI-2019, [[paper]](https://www.ijcai.org/Proceedings/2019/0747.pdf), [[code]](https://github.com/yd1996/awesome-text-style-transfer)
+```   
+Motivation:   
+目前基于GAN的文本风格迁移模型的面临的挑战:
+1. 生成的新text在保留原先的content方面仍有待提高
+
+Model:
+图片左边是原先的模型,直接判别生成的内容是否改变了style,而右边的模型则将判别器分为2部分,1部分判别生成的content是否保留,另一部分则判别style是否改变。
+```
+Model:
+![](https://github.com/LittleSummer114/Style-Transfer-in-Text/blob/master/IJCAI%202019.PNG)
+
+### 基于encoder-decoder的模型
 - Style Transfer in Text: Exploration and Evaluation, AAAI-2018, [[paper]](https://arxiv.org/abs/1711.06861), [[code]](https://github.com/fuzhenxin/text_style_transfer)
 ```   
 Motivation:   
@@ -41,10 +53,15 @@ Contributions:
 3. 提出了2个评价方法
 
 Question List:    
-1. 作者举的例子求解的是实体对间的关系? 但是实际上多个三元组(a,b,c)和(c,d,e),根据问的实体和关系在所在三元组中的位置,求解的问题可以分为4类:   
-问中间实体,已知a,b,d,e,问c;问两边的实体,已知a,b,c,d,问e;问两边的关系,已知a,b,d,e,问c和a的关系;问开头和结尾的关系(知识图谱补全).
+1. 如何做的？如何处理缺乏Non-Parallel语料的问题?
 ```
+![](https://github.com/LittleSummer114/Natural-Language-Inference-Paper-List/blob/master/images/Visual-1.PNG)
 
+- Sequence to Better Sequence: Continuous Revision of Combinatorial Structures, ICML-2017, [[paper]](http://proceedings.mlr.press/v70/mueller17a.html), [[code]](https://bitbucket.org/jwmueller/sequence-to-better-sequence/)
+- Toward Controlled Generation of Text, ICML-2017, [[paper]](https://arxiv.org/abs/1703.00955), [[official code]](https://github.com/asyml/texar/tree/master/examples/text_style_transfer), [[unofficial code]](https://github.com/GBLin5566/toward-controlled-generation-of-text-pytorch)
+- Style Transfer from Non-Parallel Text by Cross-Alignment, NIPS-2017, [[paper]](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf), [[code]](https://github.com/shentianxiao/language-style-transfer)
+- Adversarially Regularized Autoencoders, ICML-2018, [[paper]](https://arxiv.org/abs/1706.04223), [[code]](https://github.com/jakezhaojb/ARAE)
+- Zero-Shot Style Transfer in Text Using Recurrent Neural Networks, Arxiv-2017, [[paper]](https://arxiv.org/abs/1711.04731), [[code]](https://github.com/keithecarlson/Zero-Shot-Style-Transfer)
 - Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer, NAACL-2018, [[paper]](https://arxiv.org/abs/1804.06437), [[code]](https://worksheets.codalab.org/worksheets/0xe3eb416773ed4883bb737662b31b4948/)
 - SHAPED: Shared-Private Encoder-Decoder for Text Style Adaptation, NAACL-2018, [[paper]](https://arxiv.org/abs/1804.04093)
 - Sentiment Transfer using Seq2Seq Adversarial Autoencoders, project for CSYE7245 Northeastern University, [[paper]](https://arxiv.org/abs/1804.04003)
