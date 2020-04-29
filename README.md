@@ -22,7 +22,7 @@ This is a paper list for style transfer in text. It also contains some related r
 - Harnessing Pre-Trained Neural Networks with Rules for Formality Style Transfer, EMNLP-2019, [[paper]](https://www.aclweb.org/anthology/D19-1365/), [[code]](https://github.com/jimth001/formality_emnlp19)
 
 ## Unsupervised (Non-parallel Data)
-### 基于GAN的模型
+### 基于GAN的模型 Style和Content隐式分开
 - Utilizing Non-Parallel Text for Style Transfer by Making Partial Comparisonsn, IJCAI-2019, [[paper]](https://www.ijcai.org/Proceedings/2019/0747.pdf), [[code]](https://github.com/yd1996/awesome-text-style-transfer) [:whale2::whale2::whale2::whale2::whale2:] 
 ```   
 Motivation:   
@@ -35,7 +35,7 @@ Model:
 Model:
 ![](https://github.com/LittleSummer114/Style-Transfer-in-Text/blob/master/IJCAI%202019.PNG)
 
-### 基于encoder-decoder的模型
+### 基于encoder-decoder的模型 Style和Content隐式分开
 - Style Transfer in Text: Exploration and Evaluation, AAAI-2018, [[paper]](https://arxiv.org/abs/1711.06861), [[code]](https://github.com/fuzhenxin/text_style_transfer)
 ```   
 Motivation:   
