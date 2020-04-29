@@ -23,7 +23,7 @@ This is a paper list for style transfer in text. It also contains some related r
 
 ## Unsupervised (Non-parallel Data)
 ### 基于GAN的模型
-[:whale2::whale2::whale2::whale2::whale2:] - Utilizing Non-Parallel Text for Style Transfer by Making Partial Comparisonsn, IJCAI-2019, [[paper]](https://www.ijcai.org/Proceedings/2019/0747.pdf), [[code]](https://github.com/yd1996/awesome-text-style-transfer)
+- Utilizing Non-Parallel Text for Style Transfer by Making Partial Comparisonsn, IJCAI-2019, [[paper]](https://www.ijcai.org/Proceedings/2019/0747.pdf), [[code]](https://github.com/yd1996/awesome-text-style-transfer) [:whale2::whale2::whale2::whale2::whale2:] 
 ```   
 Motivation:   
 目前基于GAN的文本风格迁移模型的面临的挑战:
