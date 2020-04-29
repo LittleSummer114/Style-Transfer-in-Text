@@ -5,7 +5,6 @@ Zhenxin Fu (fuzhenxin95@gmail.com) from Peking University.
 - Commments Contributed by **[Jingyun Xu]**, from 2016-, 2020.4.29.
 - :whale2: 取自静云(鲸鱼), :whale2: 的数量仅表示个人喜好的程度 :kissing_heart:, :heart_eyes: 表示想去细读的, :dizzy_face:表示看了，没有完全看懂的。
 
-
 # A Paper List for Style Transfer in Text
 This is a paper list for style transfer in text. It also contains some related research areas, including controlled text generation.
 
@@ -15,6 +14,7 @@ This is a paper list for style transfer in text. It also contains some related r
 ## Dataset
 - Dear Sir or Madam, May I introduce the YAFC Corpus: Corpus, Benchmarks and Metrics for Formality Style Transfer, NAACL-HLT 2018, [[paper]](https://arxiv.org/abs/1803.06535)
 - A Dataset for Low-Resource Stylized Sequence-to-Sequence Generation, AAAI, 2020, [[paper]](https://www.msra.cn/wp-content/uploads/2020/01/A-Dataset-for-Low-Resource-Stylized-Sequence-to-Sequence-Generation.pdf), [[code]](https://github.com/MarkWuNLP/Data4StylizedS2S)
+- Evaluating Neural Text Simplification in the Medical Domain, WWW, 2019, [[paper]](https://pdfs.semanticscholar.org/093c/f4ede717d69d6e1e6763a3f7b4ad3ed3f3bd.pdf)
 
 ## Supervised (Parallel Data)
 - Shakespearizing Modern Language Using Copy-Enriched Sequence to Sequence Models, EMNLP-2017 Workshop, [[paper]](https://arxiv.org/abs/1707.01161)[[code]](https://github.com/harsh19/Shakespearizing-Modern-English)
@@ -58,6 +58,8 @@ Question List:
 ![](https://github.com/LittleSummer114/Natural-Language-Inference-Paper-List/blob/master/images/Visual-1.PNG)
 
 - Sequence to Better Sequence: Continuous Revision of Combinatorial Structures, ICML-2017, [[paper]](http://proceedings.mlr.press/v70/mueller17a.html), [[code]](https://bitbucket.org/jwmueller/sequence-to-better-sequence/)
+
+
 - Toward Controlled Generation of Text, ICML-2017, [[paper]](https://arxiv.org/abs/1703.00955), [[official code]](https://github.com/asyml/texar/tree/master/examples/text_style_transfer), [[unofficial code]](https://github.com/GBLin5566/toward-controlled-generation-of-text-pytorch)
 - Style Transfer from Non-Parallel Text by Cross-Alignment, NIPS-2017, [[paper]](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf), [[code]](https://github.com/shentianxiao/language-style-transfer)
 - Adversarially Regularized Autoencoders, ICML-2018, [[paper]](https://arxiv.org/abs/1706.04223), [[code]](https://github.com/jakezhaojb/ARAE)
